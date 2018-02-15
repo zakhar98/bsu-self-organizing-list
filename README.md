@@ -5,6 +5,7 @@
 | 20.02.2017 09:00 |
 
 Your task is to implement [Self organizing list](https://en.wikipedia.org/wiki/Self-organizing_list) data structure.
+Please read about MoveToFront algorithm.
 
 1. Fork [this](https://github.com/humanamburu/bsu-self-organizing-list) repo
 2. Install [nodejs](https://nodejs.org/en/) (>= v6.2.0)
@@ -13,7 +14,7 @@ Your task is to implement [Self organizing list](https://en.wikipedia.org/wiki/S
 2. Implement class methods (fille `src/self-organized-list.js`, tests `test/self-organized-list.spec.js`)
 3. Commit your changes
 4. Push changes to github
-5. Submit your task to [RS School Padawans]()
+5. Submit your task to [RS School Padawans](https://epa.ms/padawans-bsu)
 
 ### Methods
 ```javascript
