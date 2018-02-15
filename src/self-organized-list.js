@@ -8,7 +8,8 @@ class Node {
 
 class SelfOrganizedList {
     constructor() {
-
+        this.head = null;
+        this.tail = null;
     }
 
     insert(data) {
