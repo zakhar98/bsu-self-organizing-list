@@ -15,6 +15,59 @@ Your task is to implement [Self organizing list](https://en.wikipedia.org/wiki/S
 4. Push changes to github
 5. Submit your task to [RS School Padawans]()
 
+### Methods
+
+`const sol = new SelfOrganizedList()`
+
+`sol.insert(data)`
+
+Inserts data to the list;
+
+`sol.size()`
+
+Returns list length;
+
+`sol.at(index)`
+
+Returns data of the n-th element in the list;
+
+`sol.findNode(data)`
+
+Returns first founded Node that has provided data;
+
+`sol.toArray()`
+
+Returns array representation of the list;
+
+`sol.removeAt(index)`
+
+Remove n-th node from the list;
+
+`sol.moveToFront(node)`
+
+Moves node to the top of the list;
+
+`sol.reorganize(data)`
+
+Tries to find node with the data and move to front if data exist in the list; returns `true` if exist and `false` if not;
+
+### Example
+
+```javascript
+const sol = new SelfOrganizedList();
+
+sol.insert('Game of gnomes');
+sol.insert('Superficial');
+sol.insert('Breaking good');
+
+sol.size(); // 3
+sol.at(1); // Superficial
+sol.toArray(); // ['Game of gnomes', 'Superficial', 'Breaking good']
+sol.reorganize('Breaking good'); // true, and reorganize list to 'Breaking good' -> 'Game of gnomes' -> 'Superficial'
+sol.reorganize('Breaking bad'); // false, list the same
+
+```
+
 # FAQ
 1. [How to fork github repo](https://help.github.com/articles/fork-a-repo/)
 2. [How to commit and push changes](https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/)
@@ -29,7 +82,7 @@ npm test
 npm start
 ```
 
-open http://localhost:8080
+open http://localhost:8080 and hack in the browser console!
 
 ---
 
