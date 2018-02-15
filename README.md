@@ -16,38 +16,49 @@ Your task is to implement [Self organizing list](https://en.wikipedia.org/wiki/S
 5. Submit your task to [RS School Padawans]()
 
 ### Methods
-
-`const sol = new SelfOrganizedList()`
-
-`sol.insert(data)`
-
+```javascript
+const sol = new SelfOrganizedList()
+```
+```javascript
+sol.insert(data)
+```
 Inserts data to the list;
-
-`sol.size()`
+```javascript
+sol.size()
+```
 
 Returns list length;
 
 `sol.at(index)`
 
 Returns data of the n-th element in the list;
-
-`sol.findNode(data)`
+```javascript
+sol.findNode(data)
+```
 
 Returns first founded Node that has provided data;
 
-`sol.toArray()`
+```javascript
+sol.toArray()
+```
 
 Returns array representation of the list;
 
-`sol.removeAt(index)`
+```javascript
+sol.removeAt(index)
+```
 
 Remove n-th node from the list;
 
-`sol.moveToFront(node)`
+```javascript
+sol.moveToFront(node)
+```
 
 Moves node to the top of the list;
 
-`sol.reorganize(data)`
+```javascript
+sol.reorganize(data)
+```
 
 Tries to find node with the data and move to front if data exist in the list; returns `true` if exist and `false` if not;
 
