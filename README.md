@@ -29,7 +29,9 @@ sol.size()
 
 Returns list length;
 
-`sol.at(index)`
+```javascript
+sol.at(index)
+```
 
 Returns data of the n-th element in the list;
 ```javascript
