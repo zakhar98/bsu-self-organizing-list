@@ -5,7 +5,7 @@
 | 20.02.2017 09:00 |
 
 Your task is to implement [Self organizing list](https://en.wikipedia.org/wiki/Self-organizing_list) data structure.
-Please read about MoveToFront algorithm.
+Please read about Move to Front Method.
 
 1. Fork [this](https://github.com/humanamburu/bsu-self-organizing-list) repo
 2. Install [nodejs](https://nodejs.org/en/) (>= v6.2.0)
