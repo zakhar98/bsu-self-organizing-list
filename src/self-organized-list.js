@@ -21,9 +21,10 @@ class SelfOrganizedList {
             return;
         }
         let newElem = new Node(data);
-        newElem.next = this.head;
-        this.head.prev = newElem;
-        this.head = newElem;
+        this.tail.next = newElem;
+        newElem.prev = this.tail;
+        this.tail = newElem;
+        this.count++;
     }
 
     size() {
