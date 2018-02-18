@@ -31,7 +31,7 @@ class SelfOrganizedList {
     }
 
     at(index) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index >= count) {
             return null;
         }
         for (let p = this.head; p.next !== null; p = p.next) {
@@ -56,13 +56,13 @@ class SelfOrganizedList {
         let arr = [this.count];
         let i = 0;
         for (let p = this.head; p.next !== null; p = p.next) {
-            arr[i] = p.data;
+            arr[i++] = p.data;
         }
         return arr;
     }
 
     removeAt(index) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index >= count) {
             return null;
         }
         del = this.findNode(at(index));
